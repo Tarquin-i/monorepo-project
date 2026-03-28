@@ -3,11 +3,11 @@ import { cors } from 'hono/cors';
 
 export function initCors(app: OpenAPIHono) {
   app.use(
-    '/api/auth/*',
+    '/api/v1/*',
     cors({
       origin: 'http://localhost:3000',
       allowHeaders: ['Content-Type', 'Authorization'],
-      allowMethods: ['POST', 'GET', 'OPTIONS'],
+      allowMethods: ['POST', 'GET', 'OPTIONS', 'PUT', 'DELETE'],
       credentials: true,
       // origin: 'http://localhost:3000',
       // allowHeaders: ['X-Custom-Header', 'Upgrade-Insecure-Requests'],
