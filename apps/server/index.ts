@@ -1,30 +1,8 @@
-import { OpenAPIHono, createRoute } from '@hono/zod-openapi';
-import { z } from 'zod';
+import { OpenAPIHono } from '@hono/zod-openapi';
+import { initOpenAPIRouter } from './api/route';
 
 const app = new OpenAPIHono();
 
-app.openapi(
-  createRoute({
-    method: 'get',
-    path: '/1',
-    responses: {
-      200: {
-        content: {
-          'application/json': {
-            schema: z.object({}),
-          },
-        },
-        description: 'Retrieve the user',
-      },
-    },
-  }),
-  (c) => {
-    return c.json({});
-  },
-);
-
-// app.get('/', (c) => {
-//   return c.text('Hello Hono!')
-// })
+initOpenAPIRouter(app);
 
 export default app;
