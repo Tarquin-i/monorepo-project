@@ -14,7 +14,11 @@ const config = defineConfig({
     tailwindcss(),
     tanstackRouter({ target: 'react', autoCodeSplitting: true }),
     viteReact(),
-  ],
+  ],server: {
+    proxy: {
+      '/api': 'http://localhost:3100',
+    },
+  },
 })
 
 export default config

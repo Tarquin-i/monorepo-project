@@ -1,5 +1,5 @@
 {
-  "name": "db",
+  "name": "@demo/db",
   "type": "module",
   "scripts": {
     "dev": "bunx drizzle-kit push && bunx drizzle-kit studio"
