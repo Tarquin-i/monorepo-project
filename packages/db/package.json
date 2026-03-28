@@ -1,0 +1,13 @@
+{
+  "name": "db",
+  "type": "module",
+  "scripts": {
+    "dev": "bunx drizzle-kit push && bunx drizzle-kit studio"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}
