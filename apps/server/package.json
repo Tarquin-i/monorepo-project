@@ -2,7 +2,7 @@
   "name": "server",
   "type": "module",
   "scripts": {
-    "dev": "bun --port 3100 ./src/index.ts"
+    "dev": "bun --port 3100 ./index.ts"
   },
   "dependencies": {
     "@hono/zod-openapi": "^1.2.3",
