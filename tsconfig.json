@@ -1,4 +1,18 @@
 {
+  "references": [
+    {
+      "path": "./packages/db/"
+    },
+    {
+      "path": "./apps/client/"
+    },
+    {
+      "path": "./apps/server/"
+    },
+    {
+      "path": "./packages/types/"
+    }
+  ],
   "compilerOptions": {
     "target": "ES2022",
     "module": "ESNext",
